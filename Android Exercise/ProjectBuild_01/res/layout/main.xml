@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@android:color/black"
+             android:weightSum="1.0" >
+    <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:weightSum="1.0" >
+
+        <TextView
+                android:id="@+id/FirstNumber"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="First Number"
+                android:textColor="@android:color/white"
+                android:textSize="14dp" />
+
+        <TextView
+                android:id="@+id/SecondNumber"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="Second Number"
+                android:textColor="@android:color/white"
+                android:textSize="14dp" />
+    </TableRow>
+
+    <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+        <EditText
+                android:id="@+id/Number1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:singleLine="true"
+                android:text="0"
+                android:textColor="@android:color/white"
+                android:textSize="8dp" />
+
+        <EditText
+                android:id="@+id/Number2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:singleLine="true"
+                android:text="0"
+                android:textColor="@android:color/white"
+                android:textSize="8dp" />
+    </TableRow>
+
+    <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:weightSum="1.0" >
+        <TextView
+                android:id="@+id/Result"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="Result will be show here"
+                android:textColor="@android:color/white"
+                android:textSize="14dp" />
+    </TableRow>
+
+
+    <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="0.1"
+            android:gravity="center"
+            android:weightSum="1.0" >
+
+        <Button
+                android:id="@+id/plusButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="Plus(+)"
+                android:onClick="plusNumber"/>
+
+        <!--ImageButton
+                android:id="@+id/button_active_tab_changer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:background="@android:color/transparent"
+                android:onClick="changeActiveTabButton"
+                android:src="@android:drawable/ic_delete" /-->
+
+        <Button
+                android:id="@+id/minusButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="Minus(-)"
+                android:onClick="plusNumber"/>
+    </TableRow>
+</TableLayout>
+
